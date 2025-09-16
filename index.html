@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Cleaner, Greener Neighborhood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Building a Cleaner, Greener Neighborhood, One Smart Bin at a Time</h1>
+            <div class="hero-image">
+                <img src="colored.png" alt="A realistic render of a smart trash sorting station.">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="problem-section">
+            <h2 id="problem">The Problem</h2>
+            <p>In our surroundings, trash is typically disposed of in one pile, so plastic water bottles, food leftovers, and broken things all end up in one place. When these different wastes are all put together, they cannot be properly recycled, and most of them will burn or rot in the open areas. This is harmful to the environment and causes hazardous health risks, especially to people who live close to such dumping sites. Flies and stray animals are typically near piles of litter, and during rainy periods, it gets worse. There is also no easy system of waste segregation. We realized that many communities in Ethiopia, like ours, need affordable yet effective technology to facilitate the process of trash sorting.</p>
+        </section>
+
+        <section class="solution-section">
+            <h2 id="solution">Our Solution</h2>
+            <p>Our solution is to build a smart trash sorting station using four simple electronics and sensors. The system's "brain" will be an Arduino Nano, a powerful, small, and affordable unit for this purpose. The system will be affordable and easy to use by anyone, even without much experience with technology. It will simplify the work of manual sorting and make it easy to gather clean, sorted garbage.</p>
+            <p>When you want to dispose of waste, you will simply press a button to choose the type of waste, and the respective lid will be opened.</p>
+            <div class="solution-image">
+                <img src="design.png" alt="A schematic diagram of the smart trash sorting station's internal components.">
+                <p class="image-caption">Diagram of the Smart Bin's internal structure and components.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <h2>How It Works</h2>
+            <p>When a piece of waste is placed on the tray, a **load cell** detects its presence. Instantly, onboard sensors analyze the item’s material—whether it’s plastic, metal, paper, or organic waste. Once identified, the bottom platform rotates automatically, positioning the correct bin beneath the trash. A **servo-controlled gate** then releases the item, dropping it neatly into the right container. This simple, automated process reduces human error, makes recycling easier, and ensures cleaner waste streams. By improving sorting at the source, our system helps communities cut down landfill waste and move toward a sustainable, circular economy. It’s not just a bin—it’s a step toward a cleaner future.</p>
+        </section>
+
+        <section id="equipment" class="equipment-section">
+            <h2>Equipment List</h2>
+            <p>Our smart sorting station is built with a range of electronic components that work together to identify and sort waste.</p>
+            <ul>
+                <li><strong>High-torque servo (MG996R/eqv.):</strong> A powerful motor that controls the gate to release the waste.</li>
+                <li><strong>5 V regulated supply & 5 V / 2 A buck converter:</strong> Power supply components to ensure the system runs smoothly.</li>
+                <li><strong>Proximity sensors:</strong> We use a combination of inductive (for metal) and capacitive (for plastics and other dielectric materials) sensors to identify different materials.</li>
+                <li><strong>Photoelectric/reflective sensor & Ultrasonic sensor (HC-SR04):</strong> Sensors used to detect and analyze the presence of objects.</li>
+                <li><strong>IR break-beam pairs:</strong> Used to detect when an object passes a certain point in the system.</li>
+                <li><strong>Load cell + HX711:</strong> Detects when an object is placed on the tray, initiating the sorting process.</li>
+            </ul>
+        </section>
+
+        <nav class="cta-nav">
+            <h2>What's Next?</h2>
+            <ul>
+                <li><a href="#how-it-works">Learn How It Works</a></li>
+                <li><a href="#equipment">Our Equipment</a></li>
+                <li><a href="#team">Meet Our Team</a></li>
+                <li><a href="#support">Support Our Mission</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="about-us-section">
+            <h2 id="about">About Us</h2>
+            <h3>Our Story and Mission</h3>
+            <p>Our project was born from a simple observation in our community: trash is often disposed of in one pile, creating health and environmental hazards. This realization came to us while participating in the **Brighton Generation** course, which challenged us to observe our community and come up with a practical solution to a real-world problem. The course empowered us to turn this observation into a mission: to create an affordable and effective technology that facilitates trash sorting. Our goal is to provide a smart solution that simplifies waste management for everyone and promotes cleanliness in our environment, showing that a small idea can have a big impact.</p>
+
+            <h3 id="team">The Team</h3>
+            <p>Hello everyone 👋 We are a group of students from Bahir Dar University STEM Incubation Center. We do things by grouping and work on our tasks with the following teams:</p>
+            <ul>
+                <li><strong>Technical Team:</strong> Tewodros Ayalneh, Nahom Abebe, Bemnet Taddesse, Nahom Tesfaye, Ephrata Adera, Haregeweyn Zeriadawit</li>
+                <li><strong>Report and Documentation Team:</strong> Abinet Addis, Hanna Alemnew, Rediet Kassahun</li>
+                <li><strong>Survey and Data Collection Team:</strong> Fireselam Tamene, Fikir Wondimu, Ephrata Gizachew, Nuhamin Ermias, Efrata Silesh</li>
+                <li><strong>Outreach Team:</strong> Semayawit Mezgeb, Selam Degarege, Blen Daniel, Frehywot Aweke</li>
+            </ul>
+
+            <h3 id="aspiration">Our Aspiration</h3>
+            <p>Our aspiration is to show that a small concept, constructed with effort and teamwork, can have a significant impact on how trash is managed in our community. We believe that a clean environment begins with smart action, and this project is not only a technical solution but also a way to build a sense of responsibility among young people. We are ready to turn this idea into a working reality.</p>
+        </section>
+
+        <section class="support-section">
+            <h2 id="support">Why Your Support Matters</h2>
+            <p>We are a team of students working to build a cleaner and healthier community. Our project, the Smart Trash Sorting Station, is more than just a piece of technology; it's a way to tackle a real problem in our neighborhoods while also inspiring young people to become more responsible and environmentally conscious.</p>
+            <p>Your support is crucial because we need to purchase the necessary electronic components to turn our concept into a working reality. The funds you contribute will be used for things that directly help us build and test our solution. We believe that with your help, we can demonstrate the significant impact a small, student-led project can have on our community.</p>
+        </section>
+
+        <section class="budget-section">
+            <h2 id="budget">Budget</h2>
+            <p>To turn our vision into a reality, we have carefully planned our budget to ensure every contribution makes a direct impact. The total cost for the essential components of our ASTRA-Sort system is **11,370 ETB**. This includes the power supply, a range of advanced sensors, and the high-torque servo that makes our system work. The final project cost will depend on the specific type of load cell we use. Here is the full budget breakdown based on our options:</p>
+            <ul>
+                <li><strong>Budget-friendly option:</strong> With a load cell combo, the total cost comes to approximately **12,570 ETB**. This path allows us to build the sorter while keeping costs as low as possible.</li>
+                <li><strong>Mid-price kit:</strong> By choosing this option, the project cost rises to **13,287 ETB**. This choice allows us to improve the accuracy and durability of our sorting station.</li>
+                <li><strong>Higher local/import option:</strong> This premium option brings the total to **13,951 ETB**. This investment ensures our system is built with the highest quality components available, maximizing its reliability and longevity.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! You can reach out to us with any questions or support inquiries.</p>
+            <h3>Our Address</h3>
+            <address>
+                Bahir Dar University<br>
+                STEM Incubation Center<br>
+                Bahir Dar, Ethiopia
+            </address>
+            <p><strong>Email:</strong> <a href="mailto:seraworkmisikir@gmail.com">seraworkmisikir@gmail.com</a></p>
+            <p><strong>Phone:</strong> +251 935 190 015</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smart Trash Sorting Station Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

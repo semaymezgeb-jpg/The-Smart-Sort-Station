@@ -1,0 +1,197 @@
+/* General Body and Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Header and Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-color: #27ae60; /* Changed from blue to green */
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content and Sections */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 20;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Specific Section Styling */
+.solution-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.solution-image img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* List and Bullet Points */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%2327ae60"/></svg>') no-repeat left 6px; /* Changed bullet point color */
+    background-size: 6px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* CTA Navigation Bar */
+.cta-nav {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.cta-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.cta-nav li {
+    margin: 10px;
+}
+
+.cta-nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #2c3e50;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-nav a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    margin: 5px 0;
+}
+
+.contact-section a {
+    color: #27ae60; /* Changed from blue to green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
